@@ -3,7 +3,6 @@
 <div align="center">
 
 ![42 Lyon](https://img.shields.io/badge/42-Lyon-000000?style=for-the-badge&logo=42&logoColor=white)
-![Score](https://img.shields.io/badge/Score-100%2F100-success?style=for-the-badge)
 ![C++](https://img.shields.io/badge/C++-98-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 
 **Object-Oriented Programming with C++**
@@ -192,12 +191,5 @@ make
 └── README.md
 ```
 
----
-
-## Author
-
-| | |
-|---|---|
-| **vzuccare** | 42 Lyon |
 
 [![GitHub](https://img.shields.io/badge/GitHub-FumiVZ-181717?style=flat-square&logo=github)](https://github.com/FumiVZ)
