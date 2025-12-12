@@ -1,0 +1,53 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vzuccare <vzuccare@student.42lyon.fr>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/24 19:38:18 by vzuccare          #+#    #+#             */
+/*   Updated: 2024/10/29 19:02:58 by vzuccare         ###   ########lyon.fr   */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "Animal.hpp"
+
+Animal::Animal() : _type("Animal")
+{
+	std::cout << "Animal constructor called" << std::endl;
+}
+
+Animal::Animal(std::string type) : _type(type) {
+	std::cout << "Animal constructor called" << std::endl;
+}
+
+Animal::Animal(const Animal &src)
+{
+	std::cout << "Animal copy constructor called" << std::endl;
+	*this = src;
+}
+
+Animal::~Animal(void)
+{
+	std::cout << "Animal destructor called" << std::endl;
+}
+
+Animal &Animal::operator=(const Animal &src)
+{
+	std::cout << "Animal assignation operator called" << std::endl;
+	if (this == &src)
+		return *this;
+	this->_type = src._type;
+	return *this;
+}
+
+std::string Animal::getType(void) const
+{
+	return this->_type;
+}
+
+
+void Animal::makeSound(void) const
+{
+	std::cout << "* Animal sound *" << std::endl;
+}
